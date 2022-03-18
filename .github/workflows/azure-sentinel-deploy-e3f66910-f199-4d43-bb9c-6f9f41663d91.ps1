@@ -124,6 +124,7 @@ function GetCommitShaTable($getTreeResponse) {
 function PushCsvToRepo($getTreeResponse) {
     $path = $csvPath.Replace("\", "/")
     $sha = GetCsvCommitSha $getTreeResponse
+    Write-Output $sha 
     $createFileUrl = "https://api.github.com/repos/$githubRepository/contents/$path"
     $content = ConvertTableToString
     $encodedContent = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($content))
