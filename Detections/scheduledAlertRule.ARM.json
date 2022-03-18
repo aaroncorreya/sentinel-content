@@ -17,7 +17,7 @@
         "workspace": {
             "type": "string",
             "metadata": {
-                "description": "Workspace name for Log Analytics where Sentinel is setup"
+                "description": "Workspace name for Log Analytics where Sentinel is "
             }
         }
     },
